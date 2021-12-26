@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            width: inherit;
+            height: inherit;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            background: url("") center center no-repeat;
+            background-size: cover;
+        }
+        body{
+
+        }
+        html{
+
+        }        
+    </style>
+</head>
+<body>
+    back
+    
+    
+</body>
+</html>
+
+<!---------------------------------------------------------------------------------------------
+        #id{} : id kullanırken # ile kullanılr.
+        .class{} : class kullanırken . ile kullanılır.
+        h1{} : h1 gibi bilenen ögeler yalnız başına kullanılabilir.
+        #first, #second{} : , kullanarak birden fazla öge seçilebilir.
+        #firstname.number{} : spesifik id ve class'a aynı anda sahip olan seçilir.
+        ul il a{} : ul'in içindeki il'in içindeki a'yı etkileyen etiket yapmış oluyoruz.
+        * : evrensel seçicidir.
+        text-decoration: none : Yazı dekorasyonunu kaldırır.
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        #first{color:red !important} : important etiketi özelliği öne çıkarır ve
+    engellenmesini önler.         
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        opacity : bulanıklık değeridir. "1.00- 0.00" arası değişir.
+        background-image: url("/"); url ile arkaplan resmininin olacağı eleman seçilebilir.
+    / ile alt klasörlerdende resim seçimi yapılabilir
+        width: 5px;height: 5px; : width height resmin boyutunu göstermek için
+    ayarlanması lazım
+        background-size: cover; : cover ile arkaplan boyuta göre şekillendirebiliriz.
+        background-size: 10px; : arkaplanı zöel olarak da ayarlayabiliriz.0
+        background-repeat: norepeat : böylece arkaplanı tekrarlanmasını önleyebiliriz.
+        background-position: left top; : arkaplan pozisyonu ayarlanabilir
+        background-attachment: fixed; : arkaplanı aşağı inerken de sabit kalmasını sağlar
+        background: url("") no-repeat center center fixed; : burada toplu yazımı yapıldı.
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        border: 2px red solid; : çerçeveye sırasıyla boyut, renk, görünüm ayarlanır.
+        border-left: 5px blue dotted; : çerçevenin tek kenar düzenleme uygulanabilir.
+        border-radius: 10px; : çerçeveye yuvarlak şekilde kenar yapar.
+        border-radius: 10px : Eğer değeri yükseklik ile aynı verilirse tam bir yuvarlak olur.
+        border-collapse: collapse; : Yan yana çerçeveleri bütünleştirir.
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        display: inline; : Elemanın sadece kendi alanın dışına taşırmaz
+        max-width : Eğer max-width ayarlanırsa sayfa sınıra gelene kadar aynı boyutta olur.
+        display: inline-block: link oluşturma gibi inline içeren maddelere boyut
+    kazandırmak için kullanırız.
+        *{ margin: 0; padding: 0; } : şeklinde sayfanın bütün boşlukları silinir.
+        margin: top right bottom left; : şekildeki sıra ile değerler verilir.
+        margin: horizantal vertical; : şekilde sıra ile değer verilir.
+        margin-left: auto : otomatik olarak soldaki margini ayarlar ve boşluk bırakır.
+        margin-right: auto : otomatik olarak sağdaki margini ayarlar ve boşluk bırakır. 
+        padding: 5px ; : eğer sadece bir tane değer verilirse her tarafa uygular.
+        box-sizing: border-box ; padding ve border'ı dahil ederek hesaplar.       
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        text-align: center; : yazını sıralnış yerini değiştirir.
+        width: inherit; : veli olan ögenin genişliğini koruyor.
+        letter-spacing: 2px; : harfler arası boşluk büyüklüğünü ayarlar.
+        text-transform: uppercase; : Bütün kelimelri büyük harfe dönüştürür.
+        line-height: 24px; : satırlar arası boşluk büyüklüğü
+        em : elementin font büyüklüğüne oranla verilen değerdir.
+        rem : HTML'deki genel font büyüklüğüne oranını belirler. 
+        % : velinin büyüklüğüne oranla yapılır.
+        font-style: italic; font stilini belirlemek için kullanılır.
+        font-weight: bold; font'un ağırlığını değiştirebiliriz.
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        selector:pseudo_class{} : İlk başta etkileyeceğimiz ögeyi seçiyoruz. Sonrasında 
+    iki nokta ve hangi durumda değişmesi gerektiğini yazıyoruz.
+        a:hover{} : Fare üzerine geldiğinde a'ya etki uygular.
+        a:link{} : normal dururmda iken 'ya etki uygular.
+        a:visited{} : tıklandıktan sonraki a'nın durumuna etki uygular.
+        a:active{} : tıklarken a'ya uygulanacak duruma etki uygular.
+        input:focus{outline: 0;} : input'a odaklandığı zaman dış çerçedeki değişliği
+    sıfırlayan bir etki bırakır.
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        selector::pseudo_element{} : İlk başta etkileyeceğimiz ögeyi seçiyoruz. Sonrasında 
+    iki nokta ve hangi durumun uygulanması gerektiğini yazıyoruz.
+        b::first-line{} : b'nin ilk satırını seçiyoruz
+        b::firs-letter{} : b'nin ilk kelimesini seçiyoruz.
+        b::after{} : b'den sonra ne yapılacağını seçiyoruz.
+        b::before{} : b'den önce ne yapılacağını yazıyoruz.
+        b:nth-child(c){} : b'nin c'ninci çocuğuna ne yapılacağını yazıyoruz.
+        b:nth-child(even){} : n'nin çift çocuğuna ne yapılacağını yazıyoruz.
+        list-style-type: none; : liste'nin stilini sıfırlamak için kullanılır.
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        overflow: hidden; : taşma olduğunda taşan kısmı gizlemesini sağlar.
+        overflow: auto; : taşma olduğuda yanına kaydırma çubuğu ekler.
+        overflow: scroll: taşmayı önlemek için kaydırma çubuğu ekler.
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        position: fixed : sürekli ekranın üzerinde yerleştirilen yerde kalır.
+        position: relative ; top: 10px : relitive ile ögenin konulduğu yere sabitler
+    ve de üstten boşluk bırakmak istenildiğinde relative konumuna göre yapar.
+        z-index: 1; : z eksenindeki yerini değitirmek için kullanılır. Bir eşyayı
+    diğerlerinden daha öne çıkarmak için z-index'ini arttırmak lazımdır.
+        position: absolute; : Bunun çalışması için bie üst ögenin ya "fixed" ya da
+    "relative" olması lazım çünkü absolute'un çapa atabileceği alan olması lazım.
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        float: left; : Nesneyi istenilen tarafa kaydırır ve diğer ögeler onun
+    etrafında kalır.
+        <div style="clear: both;"></div> : float ile yazı çakışmaması için araya gölge
+    div ekliyoruz. Böylece eklenen float stilini silip yazı devam eder.
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        @media(){} : Parantez içerisindeki parametlere bağlı uygulanacak özellikleri ayarlarız.
+        @media(max-width: 768px){} : maksimum 768 pikselde iken media'daki özellikleri 
+    uygulayacak.
+        
+----------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------
+        background: url("") center center no-repeat; background-size: cover; : Bütün ekranı
+    kaplayan bir arka plan oluşturuluyor.
+        
+----------------------------------------------------------------------------------------------->
+

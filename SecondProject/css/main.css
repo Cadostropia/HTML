@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;            
+    box-sizing: border-box;
+}
+
+html{    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+}
+
+body{
+    height: 10000px;
+    background-color: #0f131b;
+}
+
+.Part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 140px;
+    border-bottom: rgba(255, 255, 255, 0.5) solid 0.1rem;
+}
+#TopBar{
+    display: flex;
+    border-bottom: rgba(255, 255, 255, 0.5) solid 0.1rem;
+}
+#element-1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 38rem;
+    width: 50%;
+    font-size: 3rem;
+}
+#sbox{
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+    color: white;  
+    text-decoration: none;
+}
+#sbox:hover{
+    cursor: pointer;
+}
+#element-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10rem;
+    width: 50%; 
+    font-size: 2.5rem;
+}
+.element-2-part{
+    margin: 1rem;
+    opacity: 70%;
+    color: white;  
+    text-decoration: none;
+}
+.element-2-part:hover{    
+    opacity: 100%;
+    cursor: pointer;
+}
+#element-2-5{
+    border: white 0.1rem solid;
+    background-color: white;
+    color: black;
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.6rem;
+}
+#FirstBar{
+    display: flex;
+    height: 500px;
+    text-decoration: none;
+}
+#element-3{
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(128, 128, 128, 0.5);
+    width: 70%;
+    height: 70%;
+    border-radius: 1rem;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+#element-3:hover{
+    cursor: pointer;
+    transform:  translate(0, -1rem);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.element-3-part{
+    display: flex;
+    color: aliceblue;
+    opacity: 80%;
+    text-decoration: none;
+    font-size: 3rem;
+
+}
+#element-3-1{
+    flex-wrap: wrap;
+    flex-direction: column; 
+    height: 45%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+#element-3-1-1{
+    display: flex;
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 140%;
+    margin-left: 2.5%;
+
+}
+#element-3-1-2{
+    display: flex;
+    margin-bottom: auto;
+    font-size: 80%;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+#anchor{
+    display: flex;
+    position: absolute;}
+#element-3-2{
+    display: flex;
+    position: relative;
+    z-index: 20;
+    bottom: 14rem;
+    left: 3rem;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(128, 128, 128, 1);
+}
+#Bar2{
+    display: flex;
+    height: 300px;
+
+}
+#ButtomBar{
+    display: flex;
+    height: 500px;
+
+}

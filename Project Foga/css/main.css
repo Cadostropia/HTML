@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: transparent;
+    --first-color: red;
+    --first-background: blue;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+form{
+    height: 0rem;
+    width: 0rem;
+}
+#HTML_icon{    
+    border-radius: 100rem;
+}
+textarea { 
+    /* will prevent resizing horizontally */
+    resize: none;
+ }
+
+/* ---------------------------------------------------------------------------------------------------- */
+.Navigation{
+    background-color: rgb(89, 197, 130);
+    height: 7rem;
+    width: 100%;
+    min-width: 90rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.MainIcon{    
+    display: flex;
+    height: inherit;
+    width: 8rem;
+    border-radius: 2rem;
+}
+#Icon{    
+    height: 6rem;
+    margin: 0.5rem 1rem;
+    border-radius: 20%;
+}
+.NavigationFonts{    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;    
+
+    word-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
+    font-size: 4rem;
+    text-shadow: 0.2rem 0.1rem 0.6rem rgb(212, 209, 209);
+    /* text-shadow | offset-x | offset-y | blur-radius | color */
+}
+.NavigationPreferences{  
+    display: flex;      
+    height: max-content;
+    min-width: max-content;  
+    display: inline-flex; 
+    padding: 0.4rem 3rem;
+    /* top | right | bottom | left */
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0.1rem 0.1rem;
+}
+.MainTitle{ 
+    background-color: rgb(247, 140, 233);
+    margin-right: auto;
+    color: rgb(0, 0, 0);
+}
+.History{    
+    background-color: rgb(255, 225, 115);
+    margin-right: 1rem;
+    margin-left: 2rem;
+}
+.MainPage{    
+    background-color: rgb(130, 236, 255);
+    margin-right: 1rem;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+.FormBody{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+.FormPreferences{
+    display: flex;
+    width: 100%;
+    min-width: 90rem;
+
+}
+.FormTopBar{
+    display: flex;
+    height: 4rem;
+    background-color: #f17649;
+    overflow: hidden;
+}
+.FormInfoFontPreferences{    
+    font-size: 3rem;
+    color: #ffffff;
+}
+.FormInfoPreferences{
+    display: flex;
+    height: 100%;
+    padding: 0 1rem 0 1rem;
+    align-items: center;
+}
+.FormAuthor{
+    margin-right: auto;
+}
+.FormDate{    
+    margin-left: auto;
+    border-radius: 2rem;
+}
+.FormDataFrame{
+    height: 100%;
+    width: 100%;
+
+}
+.FormData{
+    display: flex;
+    flex-flow: column;
+    height: 40rem;
+    width: 100vw;
+    background-color:#e0aef3;
+    font-size: 3rem;
+    color: black;
+}
+.FormData::-webkit-scrollbar{
+    display: none;
+}
+
+.FormData[contentEditable=true]:empty:not(:focus):before{content:attr(data-text)}
+.FormDataText{
+    display: flex;
+    height: 90%;
+    width: 100%;
+    padding: 2rem 2rem 2rem 2rem;
+    max-width: 100% !important;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    max-width: 300px;
+    background-color: rgba(68, 67, 67, 0.3);
+}
+.FormDataText:active{
+    border: none;
+}
+.FormDataText::-webkit-scrollbar{
+    display: none;
+}
+.FormDataTextButton{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem 1rem;
+    font-size: 3rem;
+}
+.FormBottomBar{
+    height: 4rem;
+    background-color: #42682f;
+}
+.FormQueue{
+    display: flex;
+    width: auto;
+    height: 100%;
+    font-size: 3rem;
+    padding: 0 1rem 0 1rem;    
+    align-items: center;
+    margin-left: auto;
+    border-radius: 2rem;
+    color: white;
+}

@@ -1,0 +1,11 @@
+#topBar{    
+}
+#topBarSection1{
+    flex-grow: 1;
+    padding: 0 0 0 8vw;
+}
+/* top | right | bottom | left */
+#topBarSection2{
+    flex-grow: 1;
+    padding: 0 8vw 0 0;
+}
